@@ -17,9 +17,9 @@ for (ch = '0' ; ch <= '9' ; ch++)
 putchar(ch);
 }
 char ch2;
-for (ch = 'a' ; ch <= 'f' ; ch++)
+for (ch2 = 'a' ; ch2 <= 'f' ; ch++)
 {
-putchar(ch);
+putchar(ch2);
 }
 putchar ('\n');
 return (0);

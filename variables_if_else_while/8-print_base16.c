@@ -12,12 +12,12 @@ int main(void)
 
 {
 char ch;
-for (ch = '0' ; ch <= '9' ; ch++)
+ char ch2;
+ for (ch = '0' ; ch <= '9' ; ch++)
 {
 putchar(ch);
 }
-char ch2;
-for (ch2 = 'a' ; ch2 <= 'f' ; ch++)
+for (ch2 = 'a' ; ch2 <= 'f' ; ch2++)
 {
 putchar(ch2);
 }

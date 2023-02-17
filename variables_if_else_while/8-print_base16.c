@@ -12,8 +12,8 @@ int main(void)
 
 {
 char ch;
- char ch2;
- for (ch = '0' ; ch <= '9' ; ch++)
+char ch2;
+for (ch = '0' ; ch <= '9' ; ch++)
 {
 putchar(ch);
 }

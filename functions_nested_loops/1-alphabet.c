@@ -2,26 +2,19 @@
 #include "main.h"
 
 /**
- * print_alphabet - Entry point
+ * print_alphabet - Make the alphabet
  *
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
 void print_alphabet(void)
+{
+  char c;
 
-{
-char lowercase;
-lowercase = 'a';
-while (lowercase <= 'z')
-{
-putchar(lowercase);
-lowercase++;
-}
-}
-int main(void)
-{
-print_alphabet();
-putchar('\n');
+  for (c = 'a'; c <= 'z'; c++)
+    {
+      _putchar(c);
+    }
+
+  _putchar('\n');
 }

@@ -1,17 +1,18 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _abs - This functions returns the absolute value of an integer.
+ * @n: Integer input param.
+ * Return: The absolute value of the @n param.
  */
 
-int main(void)
+int _abs(int n)
 {
-int x;
-
-x = _abs('0');
-_putchar (x + '0');
-return (0);
+if (n < 0)
+{
+return (n * -1);
+}
+else
+{
+return (n);
+}
 }

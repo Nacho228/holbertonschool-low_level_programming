@@ -3,6 +3,8 @@ SRC = main.c school.c
 OBJ = ${SRC:.c=.o}
 NAME = school
 RM = rm
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
 clean:
 	${RM} *.~ ${NAME}
 
@@ -15,5 +17,3 @@ fclean:
 re:
 	${CC} ${SRC} ${NAME}
 
-all: ${OBJ}
-	${CC} ${OBJ} -o ${NAME}

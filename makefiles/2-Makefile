@@ -5,6 +5,6 @@ NAME = school
 all: terrabusi wakanda
 
 terrabusi:
-	${CC} -c $(SRC) $(NAME) 
+	${CC} -c $(SRC) 
 wakanda:
 	${CC} main${OBJ} school${OBJ} -o ${NAME}

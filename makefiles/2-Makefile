@@ -1,10 +1,10 @@
 CC = gcc
-SRC = main.c school.c
-OBJ = main.o school.o
+SRC = .c
+OBJ = .o
 NAME = -o school
 all: terrabusi wakanda
 
 terrabusi:
-	${CC} $(SRC) $(NAME)
+	${CC} -c main$(SRC) $(NAME) 
 wakanda:
-	${CC} -c ${OBJ} ${NAME}
+	${CC} -c school${SRC} ${NAME}

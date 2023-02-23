@@ -3,12 +3,11 @@
  * mul - multiplies two integrers.
  *@a: integrer a.
  *@b: integrer b.
- * Return: 0.
+ * Return: a * b.
  */
 
 int mul(int a, int b)
 
 {
-mul = a * b;
-return (0);
+return (a * b);
 }

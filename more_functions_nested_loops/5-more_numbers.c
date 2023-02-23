@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * print_numbers - prints numbers.
+ * more_numbers - prints more numbers.
  *
  * Return: void.
  */
 
-void print_numbers(void)
+void more_numbers(void)
 {
 int c, b;
 for (c = 0 ; c <= 9 ; c++)

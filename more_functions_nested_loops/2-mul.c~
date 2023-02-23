@@ -1,0 +1,14 @@
+#include "main.h"
+/**
+ * mul - multiplies two integrers.
+ *@a: integrer a.
+ *@b: integrer b.
+ * Return: 0.
+ */
+
+int mul(int a, int b)
+
+{
+mul(a, b);
+return(0);
+}

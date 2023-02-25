@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_most_numbers - prints most numbers.
  *
@@ -14,7 +15,7 @@ for (c = 48 ; c <= 57 ; c++)
 if (c != 50 && c != 52)
 {
 _putchar(c);
+}
+}
 _putchar('\n');
-}
-}
 }

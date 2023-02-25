@@ -16,7 +16,12 @@ else
 {
 for (c = 0 ; c < size; c++)
 {
+if (c > 9)
+{
+_putchar((c / size) + '0');
+_putchar ((c % size) + '0');
 _putchar('#');
+}
 }
 _putchar('\n');
 }

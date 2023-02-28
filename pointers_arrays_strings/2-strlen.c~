@@ -1,0 +1,20 @@
+#include "main.h"
+#include <string.h>
+
+/**
+ * _strlen - calculates the length of the string pointedto s.
+ * @s: integrer s.
+ * Return: 0.
+ */
+
+int _strlen(char *s)
+{
+int len = 0;
+
+while (*s != '\0')
+{
+*s++;
+len++;
+}
+return(0);
+}

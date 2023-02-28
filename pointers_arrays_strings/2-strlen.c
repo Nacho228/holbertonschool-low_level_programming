@@ -4,7 +4,7 @@
 /**
  * _strlen - calculates the length of the string pointedto s.
  * @s: integrer s.
- * Return: 0.
+ * Return: len.
  */
 
 int _strlen(char *s)

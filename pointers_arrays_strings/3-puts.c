@@ -9,8 +9,7 @@
 
 int _puts(char *str)
 {
-char s[] = {'s', 't', 'r', 'i', 'n', 'g', '\0'};
-_putchar(s);
+_puts(*str);
 {
 return (0);
 }

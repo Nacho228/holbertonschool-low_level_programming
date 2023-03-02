@@ -1,8 +1,10 @@
 #include "main.h"
+
 /**
  * rev_string - a function that print a string in reverse.
  * @s: the char pointer.
  */
+
 void rev_string(char *s)
 {
 	int i = 0, counter = 0;
@@ -11,7 +13,7 @@ void rev_string(char *s)
 	while (s[i])
 	{
 		i++;
-	}	
+	}
 	for (; counter < i / 2; counter++)
 	{
 		walter_white = s[counter];

@@ -1,20 +1,21 @@
 #include "main.h"
 #include <string.h>
-/**
- * puts_half - print the second half of a string.
+#include <stdio.h>
+ of a string.
  * @str - the string to be printed.
  * Return: void.
  */
 
 void puts_half(char *str)
 {
-int gth = 0;
+int Brr_anuel = 0;
 int jesse_pinkman;
 int i;
 
-	while (*str[gth] != '\0')
+	while (*str != '\0')
 	{	 
-		gth++;
+		Brr_anuel++;
+		str++;
 	}
 for (jesse_pinkman = Brr_anuel / 2)
 	if (Brr_anuel % 2 != '\0')

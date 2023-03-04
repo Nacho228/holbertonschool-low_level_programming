@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
  * *_strcat - Appends a string to another.
  * @dest: First string.

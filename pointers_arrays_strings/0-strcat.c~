@@ -1,0 +1,30 @@
+nclude <stdio.h>
+
+char* _strcat(char* dest, const char* src) {
+	    int dest_len = 0;
+	        int i = 0;
+		    
+		         while (dest[i] != '\0') {
+		                dest_len++;
+		                         i++;
+		                             }
+		    
+		                                     i = 0;
+		                                         while (src[i] != '\0') {
+		                                                 dest[dest_len] = src[i];
+		                                                         dest_len++;
+		                                                                 i++;
+		    
+		    
+		    //                                                                         dest[dest_len] = '\0';
+		    //                                                                             // Return a pointer to dest
+		    //                                                                                 return dest;
+		    //                                                                                 }
+		    //
+		    //                                                                                 int main() {
+		    //                                                                                     char str1[20] = "Hello";
+		    //                                                                                         char str2[20] = "world";
+		    //                                                                                             printf("%s\n", _strcat(str1, str2));
+		    //                                                                                                 return 0;
+		    //                                                                                                 }
+		    //

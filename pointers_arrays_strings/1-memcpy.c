@@ -12,7 +12,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	char *s = src;
 	unsigned int A = 0;
 
-	for (; n > A; n++)
+	for (; n > A; A++)
 	{
 		e[A] = s[A];
 	}

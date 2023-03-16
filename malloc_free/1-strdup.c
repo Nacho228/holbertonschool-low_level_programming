@@ -26,7 +26,11 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-
+	if (_strdup(str2) < (i))
+	{
+		return(NULL);
+	}
 	return (str2);
+free (str2);
 }
 

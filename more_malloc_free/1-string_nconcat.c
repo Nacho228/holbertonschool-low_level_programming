@@ -20,6 +20,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	if (len2 >= n)
 	{
 		n = len2;
@@ -27,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	strcpy(str, s1);
 	strncpy(str + len1, s2, n);
-	str[len1 + n - 3] = '\0';
+	str[len1 + n] = '\0';
 
 	return (str);
 }

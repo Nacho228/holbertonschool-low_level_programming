@@ -1,6 +1,8 @@
 #ifndef header
 #define header
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct dog - my dog name, age and owner.
  * @name: her name.
@@ -17,4 +19,4 @@ struct dog
 	char *owner;
 }
 
-#endif header
+#endif

@@ -26,6 +26,5 @@ size_t print_list(const list_t *h)
 	count++;
 	node  = node->next;
 	}
-printf("-> %lu elements\n", count);
 return (count);
 }

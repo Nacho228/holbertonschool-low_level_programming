@@ -10,15 +10,16 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	unsigned int index;
 	hash_node_t *new;
 
-	index = hash_djb2((const unsigned char *)key) % ht->size;
+	index = key_index((const unsigned char *)key, ht->size);
 	new = ht->array[index];
 
-	if (new != NULL)
+	while (new != NULL)
 	{
 		if (strcmp(new->key, key) == 0)
 		{
 			return (new->value);
 		}
+		new = new->next;
 	}
 	return (NULL);
 }

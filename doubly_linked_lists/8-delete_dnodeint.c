@@ -4,7 +4,7 @@
  * @head: Double pointer to the head node.
  * @index: index.
  * Return: int.
-*/
+ */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
     dlistint_t *current = *head;
@@ -17,18 +17,23 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
         current = current->next;
 
     if (current == NULL)
-        return(-1);
-    
+        return (-1);
+
     if (current == *head)
     {
         *head = current->next;
     }
+
+    if (current->next == NULL)
+        current->prev->next = NULL;
+    else
+        current->next->prev = current->prev;
 
     if (current->prev != NULL)
         current->prev->next = current->next;
     if (current->next != NULL)
         current->next->prev = current->prev;
 
-free(current);
-return (1);
+    free(current);
+    return (1);
 }

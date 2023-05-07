@@ -6,6 +6,7 @@ void print_all(const char* const format, ...) {
     int i;
     double d;
     char* s;
+    const char *separator = ", ";
     
     const char* p = format;
     va_list args;
@@ -16,22 +17,26 @@ void print_all(const char* const format, ...) {
             case 'c':
                 c = (char) va_arg(args, int);
                 printf("%c", c);
+                printf("%s", separator);
                 break;
 
             case 'i':
                 i = va_arg(args, int);
                 printf("%d", i);
+                printf("%s", separator);
                 break;
 
             case 'f':
                 d = va_arg(args, double);
                 printf("%f", d);
+                printf("%s", separator);
                 break;
 
             case 's':
                 s = va_arg(args, char*);
                 if (s == NULL) {
                     printf("(nil)");
+                    printf("%s", separator);
                 } else {
                     printf("%s", s);
                 }

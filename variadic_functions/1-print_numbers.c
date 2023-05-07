@@ -12,17 +12,20 @@ unsigned int i;
 va_list args;
 va_start(args, n);
 
+if (n == '\0')
+{
+printf("NULL");
+}
 
 for (i = 0; i < n; i++)
 {
 count = va_arg(args, int);
 printf("%i", count);
-if (separator == NULL)
+if (separator != NULL)
 {
-printf(" ");
-}
 if (i != n - 1)
 printf("%s", separator);
+}
 }
 printf("\n");
 va_end(args);

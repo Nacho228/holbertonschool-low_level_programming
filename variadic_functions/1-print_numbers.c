@@ -12,8 +12,8 @@ unsigned int i;
 va_list args;
 va_start(args, n);
 
-if (n == '\0')
-
+if (n != '\0')
+{
 for (i = 0; i < n; i++)
 {
 count = va_arg(args, int);
@@ -26,4 +26,5 @@ printf("%s", separator);
 }
 printf("\n");
 va_end(args);
+}
 }

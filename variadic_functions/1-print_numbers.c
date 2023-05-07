@@ -28,5 +28,5 @@ printf("\n");
 va_end(args);
 }
 else
-    printf(" ");
+printf(" \n");
 }
